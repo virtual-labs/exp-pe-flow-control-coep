@@ -1,4 +1,4 @@
-## <b> Pre-test
+## Pre-test
 #### Please attempt the following questions
 
 1) What will be the output of any Flapper and Nozzle sensor? <br>

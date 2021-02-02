@@ -1203,10 +1203,5 @@ mso-displayed-thousand-separator
 	}
 
 }
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
-svg {margin-top:0px;
-           margin-bottom:0px;
-           margin-right:0px;
-           margin-left:0px;top: -175;}
-}
+
 /*question css end*/

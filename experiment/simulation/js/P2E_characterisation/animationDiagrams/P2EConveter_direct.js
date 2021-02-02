@@ -20,7 +20,7 @@ var width = $(window).width();
     //x = 310;
 	//y = 160;
 	x = 50;
-	y = 150;
+	y = 100;
 	a = 0;
 	
 	var IPNozzel = Nozzelanim_d (x, y,a);

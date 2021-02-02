@@ -21,9 +21,15 @@ var width = $(window).width();
 	
     //x = 310;
 	//y = 160;
+	if ($(window).width() <= 1368) {
+	  x = -10;
+	y = 0;
+  }else
+  {
+   x = -10;
+	y = 100;
+  }	
 	
-	x = -10;
-	y = 200;
 
 	
 	var Ft_tank = FT_tank(x,(y-30));	

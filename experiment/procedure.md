@@ -1,10 +1,10 @@
 ### Instructions to run the simulator
 ## Simulator contains 6 steps
-1)	Introduction
-2)	Configuration 
-3)	Connection 
-4)	Characterization 
-5)	Calibration
+1)	Introduction \
+2)	Configuration  \
+3)	Connection  \
+4)	Characterization  \
+5)	Calibration \
 6)	Fault Detection
 
 ## Procedure to run the simulator's 6 steps:

@@ -1,0 +1,1207 @@
+/* CSS Document */
+body {
+	background-color:;
+}
+
+#main-div {
+	width: 90%;
+/* 	height: 100% */
+	margin: 10px 5%;
+	border: 3px solid #666;
+	/* 		background-color:#ededf1; */
+/* 	background-image: url("../images/bg.jpg"); */
+	font-family: Cambria, Georgia, serif;
+	padding: 20px 1%;
+}
+
+header {
+	border: 1px solid;
+    height: 100px;
+    width: 100%;
+    padding: 0 5%;
+    background: rgb(125,176,169);
+    background: linear-gradient(90deg, rgba(125,176,169,1) 0%, rgba(78,109,114,1) 31%, rgba(33,44,62,1) 100%);
+}
+
+footer {
+	border: 1px solid #666;
+	height: 30px;
+	width: 100%;
+	background: #2f7875;
+	bottom: 0px;
+}
+
+header img {
+	padding: 1px;
+    border-radius: 68px;
+    vertical-align: middle;
+    width: 95px;
+    height: 95px;
+    background: #fff;
+    float: left;
+    margin-right: 30px;
+}
+
+header h1 {
+	font-family: Cambria, Georgia, serif;
+	color: #fff;
+	font-size: 25px;
+	margin: 20px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+header #appName {
+	font-family: Cambria, Georgia, serif;
+	color: #fff;
+	font-size: 16px;
+	margin: 10px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+header h2 {
+	font-family: Cambria, Georgia, serif;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+/* .tab-content */
+/* {background-color: #fff; */
+/* padding:10px;} */
+
+/* .nav-tabs { */
+/*     border-bottom: 1px solid #381515; */
+/* } */
+/* .nav li { background-color: #059894; color:#fff;} */
+/* .nav a { color:#fff;} */
+/* .nav a:hover { background-color:#c2f0ef; color:#000;} */
+
+/* .nav > li > a { */
+
+/*     position: relative; */
+/*     display: block; */
+
+/*     padding: 10px; */
+/* } */
+#dvSource {
+	border-right: 3px solid #666;
+	height: 770px;
+}
+
+#dvSource h1 {
+	padding: 5px 10px;
+	margin: 5px 0 0 0;
+	background-color: #381515;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.sourceImg1 {
+	width: 40%;
+	height: 150px;
+	margin: 10px 5%;
+	float: left;
+}
+
+.sourceImg2 {
+	width: 40%;
+	height: 200px;
+	margin: 10px 5%;
+	float: left;
+}
+
+#dvDest .idbname {
+	font-weight: bold;
+	padding: 5px;
+	width: 100%;
+	background-color: #381515;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+}
+
+#dvDest .img {
+	margin: 0 auto;
+	padding: 5px;
+	height: 350px;
+	border-right: 1px solid #666;
+	border-bottom: 3px solid #666;
+}
+
+#dvDest .img1 {
+	margin: 10px 10%;
+	width: 80%;
+	height: auto;
+}
+
+#dvDest .img2 {
+	margin: 10px 25%;
+	width: 50%;
+	height: 200px;
+}
+
+#dvDest .img3 {
+	margin: 10px 40%;
+	width: 20%;
+	height: 200px;
+}
+
+#dvDest .img4 {
+	margin: 10px 30%;
+	width: 40%;
+	height: 200px;
+}
+
+#dvDest button {
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 0;
+	width: 32%;
+	background-color: #381515;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+}
+
+#dvDest button:hover {
+	background-color: transparent;
+	border: 1px solid #006;
+	color: #006;
+}
+
+#dvDest .buttonDiv {
+	padding: 10px 35%;
+}
+
+/* .success { */
+/* 	border: 2px solid #090; */
+/* 	padding: 5px; */
+/* } */
+
+/* .danger { */
+/* 	border: 2px solid #C00; */
+/* 	padding: 5px; */
+/* } */
+kbd {
+	padding: 11px 4px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #333;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+/* table css */
+{
+mso-displayed-decimal-separator
+
+
+
+
+:
+
+
+
+
+"
+\.
+
+
+";
+mso-displayed-thousand-separator
+
+
+
+
+:
+
+
+
+
+"\
+,
+";
+}
+.font511914 {
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+}
+
+.font611914 {
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+}
+
+.xl1511914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Rockwell, sans-serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: general;
+	vertical-align: bottom;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6311914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl6411914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6511914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 14.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border-top: .5pt solid #000;
+	border-right: none;
+	border-bottom: none;
+	border-left: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl6611914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 14.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border-top: .5pt solid #000;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl6711914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 14.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border-top: .5pt solid #000;
+	border-right: .5pt solid #000;
+	border-bottom: none;
+	border-left: none;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl773263, .xl6520295, .xl633263, .xl763263, .xl6620295, .xl6320295,
+	.xl672125, .xl663263, .xl673263, .xl6420295, .xl6520295, .xl763263,
+	.xl783263, .xl803263, .xl653263, .xl673263, .xl683263, .xl643263,
+	.xl653263, .xl683263, .xl643263, .xl673263, .xl763263, .xl643263,
+	.xl693263, .xl653263, .xl722125, .xl642125, .xl712125, .xl642125,
+	.xl702125, .xl682125, .xl692125, .xl642125, .xl652125, .xl662125 {
+	font-size: 13px;
+	border: 1px solid #000;
+}
+
+.xl6811914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 14.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border-top: none;
+	border-right: none;
+	border-bottom: .5pt solid #000;
+	border-left: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl6911914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 14.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border-top: none;
+	border-right: none;
+	border-bottom: .5pt solid #000;
+	border-left: none;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl7011914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 14.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border-top: none;
+	border-right: .5pt solid #000;
+	border-bottom: .5pt solid #000;
+	border-left: none;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl7111914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl7211914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl7311914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl7411914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: Fixed;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl7511914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 7.5pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl7611914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl7711914 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+/* Stream Cv table css */
+{
+mso-displayed-decimal-separator
+
+
+:
+
+
+"
+\.
+";
+
+
+	
+
+mso-displayed-thousand-separator
+
+
+:
+
+
+"\
+,
+";
+}
+.font513578 {
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+}
+
+.font613578 {
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+}
+
+.xl1513578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Calibri;
+	mso-generic-font-family: auto;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: general;
+	vertical-align: bottom;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6313578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: bottom;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6413578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: normal;
+}
+
+.xl6513578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 12.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6613578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6713578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 7.5pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6813578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+.xl6913578 {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: black;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: "Book Antiqua", serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	text-align: center;
+	vertical-align: middle;
+	border: .5pt solid #000;
+	mso-background-source: auto;
+	mso-pattern: auto;
+	white-space: nowrap;
+}
+
+/* experiment css  start*/
+.list-group-item {
+	color: 5ba4a4;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: 1px solid #666;
+	font-family: Cambria, Georgia, serif;
+}
+
+.tab .tab-content ul, li {
+/* 	color: 5ba4a4; */
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', 'Arial Narrow', serif;
+}
+
+.tab .tab-content #project1, #project2, #project3, #project4 {
+	padding: 10px;
+	/*  border-left:1px solid #000; */
+	/*  border-right:1px solid #000; */
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	/*  background-image: url("../images/bg.jpg"); */
+}
+
+#project1 p {
+	border-left: 8px solid rgba(63, 148, 148, 0.3);
+	margin: 5px 0 20px 0;
+	font-size: 15px;
+	padding-left: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project1 .li-style {
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project1 h1 {
+	background: #05938f;
+	padding: 9px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project1 img {
+	border: 6px solid #fff;
+	margin: 10px;
+}
+
+#project2 p {
+	border-left: 8px solid rgba(63, 148, 148, 0.3);
+	margin: 5px 0 20px 0;
+	font-size: 15px;
+	padding-left: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project2 h1 {
+	background: #05938f;
+	padding: 9px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project2 .li-style {
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project3 p {
+	border-left: 8px solid rgba(63, 148, 148, 0.3);
+	margin: 5px 0 20px 0;
+	font-size: 15px;
+	padding-left: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project3 h1 {
+	background: #05938f;
+	padding: 9px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project3 section {
+	padding-left: 50px;
+}
+
+#project3 h2 {
+	background: #8c9090;
+	padding: 9px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project3 .li-style {
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project3 .modal-dialog {
+	width: 80%;
+	margin: 10px 10%;
+}
+
+#project4 p {
+	border-left: 8px solid rgba(63, 148, 148, 0.3);
+	margin: 5px 0 20px 0;
+	font-size: 15px;
+	padding-left: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project4 .li-style {
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: normal;
+	color: #272525;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project4 h1 {
+	background: #05938f;
+	padding: 9px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project4 h2 {
+	background: #8c9090;
+	padding: 9px 15px;
+	margin: 30px 0;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#project4 section {
+	margin-left: 20px;
+}
+
+#project4 kbd {
+	padding: 3px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #333;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+/* experiment css  end*/
+
+/* question css start*/
+#terminologiesDiv {
+	border: 1px solid #05938f;
+	width: 100%;
+	height: auto;
+	padding: 0px 20px 10px 20px;
+	background-color: #fff;
+	font-family: Cambria, Georgia, serif;
+}
+
+#terminologiesDiv span {
+	background-color: #076f9a;
+	font-size: 21px;
+	padding: 2px 10px;
+	margin: 10px 0;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#quesDiv .queTitle {
+	padding-left: 20px;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+#quesDiv .ansTitle {
+	padding-left: 40px;
+	font-size: 18px;
+}
+
+#quesDiv input[type="checkbox"], input[type="radio"] {
+	margin: 4px;
+	margin-top: 1px\9;
+	line-height: normal;
+}
+
+#terminologiesDiv, #testSubmit, #nextLevel, #LCnextLevel, #TCnextLevel, #PCnextLevel, #FCnextLevel, #LC_LTcheckConfig, #LC_LTwiringDiagram, #PC_PTcheckConfig
+{
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: #666;
+	margin: 20px 10px;;
+	letter-spacing: 1px;
+	font-weight: bold;
+/* 	box-shadow: 0 5px #999; */
+}
+#FC_FYcheckConfig, #LC_LYcheckConfig, #PC_PYcheckConfig, #TC_TYcheckConfig, #FC_FYwiringDiagram, #LC_LYwiringDiagram, #PC_PYwiringDiagram, #TC_TYwiringDiagram
+{
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: #666;
+	margin: 20px 10px;;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+#PC_PTwiringDiagram {
+	padding: 10px ;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #666;
+	margin: 20px 10px;;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/*box-shadow: 0 5px #999;*/
+}
+
+#TC_TTcheckConfig, #TC_TTwiringDiagram  {
+	padding: 10px ;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #666;
+	margin: 20px 10px;;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/*box-shadow: 0 5px #999;*/
+}
+#FC_FTcheckConfig, #FC_FTwiringDiagram
+{
+	padding: 10px ;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #666;
+	margin: 20px 10px;;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/*box-shadow: 0 5px #999;*/
+}
+#terminologiesDiv   #testSubmit:hover, #nextLevel:hover {
+	background-color: #05aaa5
+}
+
+#terminologiesDiv #testSubmit:active, #nextLevel:active {
+	background-color: #05aaa5;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+#questionDiv{}
+.QueHead{font-size: 18px;
+      font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-family: Cambria, Georgia, serif;
+	}
+#questionDiv .queno
+{ background-color:#076f9a; padding:5px 10px; color:#fff; font-size: 20px; border-radius: 10px; font-family: Cambria, Georgia, serif;}
+#questionDiv .queTitle {
+	padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+#identify, #reset, #next {
+	z-index:1111;
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: #666;
+	margin-right:28px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	/*box-shadow: 0 5px #999;*/
+}
+
+@media screen and (max-width:2000px) {
+	#main-div {
+		width: 100%;
+/* 		height: auto; */
+		margin: 10px 0%;
+		border: 3px solid #666;
+	}
+}
+
+@media screen and (min-width: 100px) and (max-width: 468px) {
+	#main-div {
+		width: 100%;
+		height: auto;
+		margin: 10px 0%;
+		border: 3px solid #666;
+	}
+	header img {
+		width: 101px;
+	}
+	header h1 {
+		font-size: 15px;
+		margin: 7px;
+	}
+	header h2 {
+		font-size: 13px;
+	}
+}
+
+@media screen and (min-width: 469px) and (max-width: 768px) {
+	#main-div {
+		width: 100%;
+		height: auto;
+		margin: 10px 0%;
+		border: 3px solid #666;
+	}
+	header img {
+		width: 101px;
+	}
+	header h1 {
+		font-size: 15px;
+		margin: 7px;
+	}
+	header h2 {
+		font-size: 13px;
+	}
+
+}
+
+/*question css end*/

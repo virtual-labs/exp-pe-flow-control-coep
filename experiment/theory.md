@@ -16,13 +16,13 @@ The input signal which is air pressure in the range 0.2 to 1.0 kg/cm2    which i
 
 In case of LVDT the core is moved upwards after applying the pneumatic signal which will in turn will change the output voltage of the LVDT. This voltage is converted to current signal as the requirement of interfacing signal is current. For further details of working of LVDT please refer to "Sensors Modelling Lab" of COEP. (https://portal.coepvlab.ac.in/vlab/auth/home?dept=3&lab=1&exp=4&sim=4)   
 
-## Calibration of P/I converter
+### Calibration of P/I converter
 
-### Generally P/I converter is calibrated for standard industrial signals as 0.2-1.0 kg/cm^2 (3-15 psig) input corresponds to 4-20 mA DC output. 
+#### Generally P/I converter is calibrated for standard industrial signals as 0.2-1.0 kg/cm^2 (3-15 psig) input corresponds to 4-20 mA DC output. 
 
-## To adjust the zero and span settings 
+### To adjust the zero and span settings 
 
-### Generally Two adjustments for zero and span are provided on front panel of unit.
+#### Generally Two adjustments for zero and span are provided on front panel of unit.
 1. Connect control input 0.2-1.0 kg/cm^2 i.e. 3-15 psig.
 
 2. Set the input signal to 0.2 kg/cm^2 (3 psig) and check the output current as 4 mA.

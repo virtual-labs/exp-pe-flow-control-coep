@@ -1,0 +1,46 @@
+[{
+	"question": "A differential pressure transmitter is calibrated 0 to 80 inches of water and transmits a 4 to 20 mA dc signal. This transmitter is placed across an orifice plate which is sized to create 80 inches of water differential 6 gallons per minute. What is the flow rate when the signal is 13 mA dc?",
+	"answers": {
+		"a": "4.5 gpm",
+		"b": "3.9 gpm",
+		"c": "3.4 gpm",
+		"d": "4.9 gpm"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "For the equipment described in the preceding question, what will the signal be if the flow rate is 4 gpm?",
+	"answers": {
+		"a": "13.3 mA dc",
+		"b": "8.9 mA dc",
+		"c": "11.2mAdc",
+		"d": "6.7mA dc"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "Assume the line used in Questions 1 and 2, is a 1/2-inch schedule 40 pipe (IV = 0.622 inches). find the orifice bore used to satisfy the conditions given if the measured fluid is water at 60 Deg F",
+	"answers": {
+		"a": "0.352 inches",
+		"b": "0.190 inches",
+		"c": "0.556 inches",
+		"d": "0.414 inches"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "The best choice of orifice taps in the preceding problem would be:",
+	"answers": {
+		"a": "flange taps",
+		"b": "corner taps",
+		"c": "vena-contracta taps",
+		"d": "pipe taps"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The output signal or reading of a magnetic flowmeter is:",
+	"answers": {
+		"a": "Proportional to volumetric flow rate",
+		"b": "Proportional to the square root of volumetric flow rate",
+		"c": "Inversely proportional to volumetric flow rate",
+		"d": "Proportional to the square of volumetric flow rate"
+	},
+	"correctAnswer": "d"
+}]

@@ -1,0 +1,852 @@
+@charset "utf-8";
+/* CSS Document */
+.modal-dialog {
+    width: 620px;
+    margin: 30px auto;
+}
+.modal-header {
+    font-size: 21px;
+    padding: 15px;
+    color: #fff;
+    background: darkcyan;
+    border-bottom: 1px solid #607D8B;
+    font-weight: bold;
+}
+.modal-title {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.42857143;
+    font-size: 21px;
+    text-align: center;
+}
+#calibrationmyModal .formu{font-size: 15px;
+    font-weight: bold;
+    color: #795548;
+    padding:5px 0;
+    text-align: left;
+    }
+    
+    #calibrationmyModal p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    background: #008b8b;
+    }
+#tramsTInst {
+	padding: 20px 0;
+}
+
+#tramsTInst p {
+	margin: 50px 0 20px 0;
+	text-align: justify;
+	padding: 0 20px 0 29px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #696868;
+}
+
+#tramsTInst ol{margin:10px 0;}
+#tramsTInst li {
+	margin:10px 0;
+	text-align: justify;
+	padding: 0 10px 0 41px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #696868;
+}
+
+#tramsTInst span {
+	color: #EF6C00;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+#LC_Error_graph_data, #FC_Error_graph_data, #PC_Error_graph_data, #TC_Error_graph_data { 
+    font-size: 15px;
+    padding: 5px;
+    text-align:center;
+    font-family: Cambria, Georgia, serif;
+    }
+   #LC_Error_graph_data, #FC_Error_graph_data, #PC_Error_graph_data, #TC_Error_graph_data .table {
+   text-align:center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3px;
+}
+#LC_Error_graph_data, #FC_Error_graph_data, #PC_Error_graph_data, #TC_Error_graph_data th{text-align: center;}
+#LC_Error_graph_data, #FC_Error_graph_data, #PC_Error_graph_data, #TC_Error_graph_data td{text-align: center;}
+h6 {
+	font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 1px 0;
+    padding: 0 0 6px 0;
+    border-bottom: 2px solid #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+#minusSpan {
+	width: 35px;
+	height: 35px;
+	background-image: url(../images/minus.png);
+	background-size: cover;
+	float: right;
+}
+
+#plusSpan {
+	width: 35px;
+	height: 35px;
+	background-image: url(../images/plus.png);
+	background-size: cover;
+	float: left;
+}
+
+#PC_calibrationDiv span {
+	text-align: left;
+	padding: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #328806;
+}
+
+#FC_calibrationDiv span {
+	text-align: left;
+	padding: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #328806;
+}
+
+#TC_calibrationDiv span {
+	text-align: left;
+	padding: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #328806;
+}
+
+.PCCanvas {
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+#SpanErrorKnockSuccess, #ZeroErrorKnockSuccess, #LinearityKnockSuccess {
+	/* 	margin: 50px 0; */
+	position: absolute;
+	top: 120px;
+}
+
+.faultMsg {
+	font-size: 18px;
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+	color: brown;
+}
+
+.disabledDiv {
+	pointer-events: none;
+	opacity: 0.4;
+}
+
+#LC_FaultScroll {
+	padding-bottom: 100px;
+	overflow-y: scroll;
+	height: auto;
+}
+
+#TC_FaultScroll {
+	padding-bottom: 100px;
+	overflow-y: scroll;
+	height: auto;
+}
+
+#PC_FaultScroll {
+	padding-bottom: 100px;
+	overflow-y: scroll;
+	height: auto;
+}
+
+#FC_FaultScroll {
+	padding-bottom: 100px;
+	overflow-y: scroll;
+	height: auto;
+}
+
+p {
+	color: #000;
+	/* text-align: center; */
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.plsCalibrate {
+	color: #bb100d;
+	/* text-align: center; */
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 15px;
+}
+/* #TC_calibrateNeeded, #FC_calibrateNeeded, #PC_calibrateNeeded, #LC_calibrateNeeded{color: #bb100d; */
+/*     padding: ; */
+/*     text-align: center; */
+/*     margin: 11px 0px; */
+/*     font-weight: bold; */
+/*     font-size: 15px;} */
+#ZeroangleVal {
+	width: 90%;
+	margin: 2px 5%;
+	padding: 7px;
+	border-radius: 10px;
+	border: 1px solid cornflowerblue;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+#SpanangleVal {
+	width: 90%;
+	margin: 2px 5%;
+	padding: 7px;
+	border-radius: 10px;
+	border: 1px solid cornflowerblue;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+#ZeroErrorKnockData h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#SpanErrorKnockData h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#LinearitySectionOneKnockData h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#LinearitySectionTwoKnockData h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#LinearitySectionBothKnockData h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.glyphicon-ok {
+	color: #059805;
+	font-size: 21px;
+}
+
+.glyphicon-plus {
+	color: #059805;
+	font-size: 16px;
+	background: #d2cece;
+	padding: 12px;
+	margin: 0;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.glyphicon-minus {
+	color: #ff0000;
+	font-size: 16px;
+	background: #d2cece;
+	padding: 12px;
+	margin: 0;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.range {
+	height: 200px;
+	width: 200px;
+	background-image: url(../images/CalibrationImg/range.png);
+	margin: 20px;
+	color: #000;
+	text-align: center;
+	background-size: cover;
+}
+
+.icon-repeat1 {
+	height: 120px;
+	width: 120px;
+	/* background: #fff; */
+	background-image: url(../images/CalibrationImg/screwN.png);
+	margin: 55px auto;
+	color: #000;
+	text-align: center;
+	/* border: 1px solid #000; */
+	border-radius: 50px;
+	background-size: cover;
+}
+
+.icon-repeat {
+	height: 120px;
+	width: 120px;
+	/* background: #fff; */
+	background-image: url(../images/CalibrationImg/screwN.png);
+	margin: 55px auto;
+	color: #000;
+	text-align: center;
+	/* border: 1px solid #000; */
+	border-radius: 50px;
+	background-size: cover;
+}
+
+.symbol {
+	margin-top: px;
+	margin-left: 13px;
+	z-index: 1111;
+}
+
+.slidecontainer {
+	border-radius: 10px;
+	border: 2px solid #666;
+	padding: 10px;
+	width: 98%;
+	margin: 0 1% 10px 1%;
+}
+
+.slidecontainer .header {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: left;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.slidecontainer p {
+	color: #333;
+	padding: 5px;
+	text-align: left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 23px;
+	height: 24px;
+	border: 0;
+	background: url(../../contrasticon.png);
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 23px;
+	height: 24px;
+	border: 0;
+	background: url(../../contrasticon.png);
+	cursor: pointer;
+}
+
+.buttons-excel {
+	background-color: #337ab7;
+	color: #fff;
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+.buttons-pdf {
+	background-color: #337ab7;
+	color: #fff;
+	margin: 0 5px;
+	font-weight: bold;
+}
+/*  LC_characterisation css start    */
+#LC_characterisationDIv {
+	/*width: 100%; */
+/* 	overflow: scroll; */
+/* 	height: Auto; */
+	padding: 10px 10px 20px 10px;
+}
+
+#TestNextDiv {
+	/*width: 100%; */
+	
+	padding: 10px 10px 150px 10px;
+}
+
+#LC_characterisationDIv #table_IO_wrapper {
+	padding: 10px;
+}
+
+#LC_characterisationDIv #IOtable {
+	padding: 0px 10px;
+	width: 96%;
+	margin: 5px 2%;
+}
+
+#table_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#table_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#table_IO_filter {
+	display: none;
+}
+
+#LC_DataTable_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#LC_DataTable_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#LC_DataTable_IO_filter {
+	display: none;
+}
+
+button.dt-button, div.dt-button, a.dt-button {
+	background-color: #333;
+	color: #fff
+}
+
+#LC_characterisationDIv #submit_LC_WaterLevel, #LC_graph,
+	#LC_calibration, #LC_FaultChecking, #LC_FindFault {
+	padding: 6px 10px;
+	background-color: #666;
+	color: #fff;
+	margin: 0 5px;
+	font-size: 15px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+#LC_characterisationDIv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+#PC_characterisationDIv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+#TC_characterisationDIv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+#FC_characterisationDIv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+.canvasjs-chart-tooltip, .canvasjs-chart-credit {
+	display: none;
+}
+/*  LC_characterisation css end    */
+#LC_calibrationDiv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#LC_faultCkeck h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#LC_calibrationDiv span {
+	color: #333;
+	text-align: left;
+	padding: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.submit_LC_Calibration {
+	background-color: #337ab7;
+	color: #fff;
+	font-weight: bold;
+}
+
+#LC_calibrationDiv  .checkbox-inline, .radio-inline {
+	position: relative;
+	color: #000;
+	font-weight: bold;
+	font-size: 17px;
+	display: inline-block;
+	padding-left: 20px;
+	margin-left: 20px;
+	font-weight: 400;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#LC_calibrationDiv .marg {
+	margin: 5px 0 5px 0;
+}
+/* TC_characterisation css start */
+#TC_faultCkeck h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#TC_characterisationDIv {
+	/*width: 100%; */
+/* 	overflow: scroll; */
+/* 	height: 800px; */
+	padding: 10px 10px 20px 10px;
+}
+
+#TC_characterisationDIv #submit_TC_WaterLevel, #TC_graph,
+	#TC_calibration, #TC_FaultChecking, #TC_FindFault {
+	padding: 6px 10px;
+	background-color: #666;
+	color: #fff;
+	margin: 0 5px;
+	font-size: 15px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+#TC_characterisationDIv #table_IO_wrapper {
+	padding: 10px;
+}
+
+#TC_characterisationDIv #IOtable {
+	padding: 0px 10px;
+	width: 96%;
+	margin: 5px 2%;
+}
+
+#IO_table thead {
+	background: #666;
+	color: #fff;
+}
+
+#IO_table th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#IO_table_filter {
+	display: none;
+}
+
+#TC_DataTable_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#TC_DataTable_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#TC_DataTable_IO_filter {
+	display: none;
+}
+
+#TC_calibrationDiv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.submit_TC_Calibration {
+	background-color: #337ab7;
+	color: #fff;
+	font-weight: bold;
+}
+
+#TC_calibrationDiv .marg {
+	margin: 5px 0 5px 0;
+}
+/*  TC_characterisation css end    */
+
+/*  PC_characterisation css start    */
+#PC_faultCkeck h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#PC_characterisationDIv { /*width: 100%; */
+/* 	overflow: scroll; */
+/* 	height: 800px; */
+	padding: 10px 10px 20px 10px;
+}
+
+#PC_characterisationDIv #submit_PC_WaterLevel, #PC_graph,
+	#PC_calibration, #PC_FaultChecking, #PC_FindFault {
+	padding: 6px 10px;
+	background-color: #666;
+	color: #fff;
+	margin: 0 5px;
+	font-size: 15px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+#PC_characterisationDIv #table_IO_wrapper {
+	padding: 10px;
+}
+
+#PC_characterisationDIv #IOtable {
+	padding: 0px 10px;
+	width: 96%;
+	margin: 5px 2%;
+}
+
+#table_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#table_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#table_IO_filter {
+	display: none;
+}
+
+#PC_DataTable_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#PC_DataTable_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#PC_DataTable_IO_filter {
+	display: none;
+}
+
+#PC_calibrationDiv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.submit_PC_Calibration {
+	background-color: #337ab7;
+	color: #fff;
+	font-weight: bold;
+}
+
+#PC_calibrationDiv .marg {
+	margin: 5px 0 5px 0;
+}
+/*  pC_characterisation css end    */
+
+/*  FC_characterisation css start    */
+#FC_faultCkeck h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+#FC_characterisationDIv #submit_FC_WaterLevel, #FC_graph,
+	#FC_calibration, #FC_FaultChecking, #FC_FindFault {
+	padding: 6px 10px;
+	background-color: #666;
+	color: #fff;
+	margin: 0 5px;
+	font-size: 15px;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+#FC_characterisationDIv {
+	/*width: 100%; */
+/* 	overflow: scroll; */
+/* 	height: 800px; */
+	padding: 10px 10px 20px 10px;
+}
+
+#FC_characterisationDIv #table_IO_wrapper {
+	padding: 10px;
+}
+
+#FC_characterisationDIv #IOtable {
+	padding: 0px 10px;
+	width: 96%;
+	margin: 5px 2%;
+}
+
+#table_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#table_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#table_IO_filter {
+	display: none;
+}
+
+#FC_DataTable_IO thead {
+	background: #666;
+	color: #fff;
+}
+
+#FC_DataTable_IO th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#FC_DataTable_IO_filter {
+	display: none;
+}
+
+#FC_calibrationDiv h1 {
+	background: #666;
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	margin: 11px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.submit_FC_Calibration {
+	background-color: #337ab7;
+	color: #fff;
+	font-weight: bold;
+}
+
+#FC_calibrationDiv .marg {
+	margin: 5px 0 5px 0;
+}
+
+/*  FC_characterisation css end    */
+/*   #mainDiv{ overflow:scroll} */

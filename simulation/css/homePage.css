@@ -1,0 +1,195 @@
+.levelsApp {
+	padding: 50px 20px;
+}
+
+.levelsApp label {
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.levelsApp select {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.AppField {
+	padding: 10px 20px;
+	background: #999;
+	color: #fff;
+	/* 	position:fixed; */
+	/* 	bottom:10px ; */
+	/* 	right:10px; */
+}
+
+.fa-plus-square {
+	font-size: 46px;
+	color: green;
+	margin-left: -10px
+}
+
+.fa-minus-square {
+	font-size: 46px;
+	color: red;
+	margin-left: -10px
+}
+
+.draw2d_InputPort {
+	fill: #F7F7F7;
+	stroke: #d7d7d7;
+}
+
+.draw2d_OutputPort {
+	fill: #F7F7F7;
+	stroke: #d7d7d7;
+}
+/* 	#TestDiv{overflow-x: scroll; */
+/*     overflow-y: scroll; ; width:100%; height:100%; padding:10px 0 200px 0; } */
+#connectionLevel h4 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #333;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+#instructionDiv h4 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	background-color: #333;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+#instructionDiv .infoInst {
+	padding: 40px 10px;
+	color: #a92727;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#library {
+	border: 2px solid #333;
+	height: 1000px;
+	overflow: scroll;
+	padding-bottom: 100px;
+	
+}
+
+#library p {
+	background: #666;
+    color: #fff;
+    padding: 2px 10px;
+    text-align: center;
+    margin: 1px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+}
+#commanSymbols, #TransmitterSymbols, #I2PSymbols, #P2ESymbols{padding: 0 5px;
+    border: 2px solid #666; margin:5px 0; border-radius: 4px;}
+#draw2Did {
+	border: 2px solid #333;
+	height: 950px;
+	overflow-x: scroll
+}
+
+#draw2Did nav {
+	font-weight: bold;
+	color: #fff;
+	background-color: #333;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+#draw2Did a {
+	font-size: 18px;
+	background: #666;
+	color: #fff;
+	margin: 10px 20px;
+	padding: 5px 5px;
+}
+
+#img1 {
+	float: left;
+	width: 90px;
+	height: 90px;
+}
+
+#discriptionDiv h4 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #333;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+#discriptionDiv p {
+	font-size: 18px;
+	color: #333;
+	padding: 1px 10px;
+	font-family: Cambria, Georgia, serif;
+}
+
+#configDiv {
+	/* 	 margin: 0 12%; */
+	/*     width: 76%; */
+	
+}
+
+#configDiv  h4 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #333;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+#configDiv  h6 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin: 5px 0;
+	padding: 5px 0 10px 0;
+	border-bottom: 2px solid #333;
+	font-family: Cambria, Georgia, serif;
+}
+
+#configDiv span {
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#configDiv select {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#configDiv .topmargin {
+	margin: 10px 0
+}
+
+@media screen and (max-width:1200px ) and (min-width:300px) {
+	.fa-minus-square {
+		font-size: 46px;
+		color: red;
+		margin-left: -20px
+	}
+}

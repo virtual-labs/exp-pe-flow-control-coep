@@ -22,9 +22,15 @@ var width = $(window).width();
     //x = 310;
 	//y = 160;
 	
+	
+if ($(window).width() <= 1368) {
 	x = 200;
-	y = 300;
-
+	y = 50;
+  }else
+  {
+   x = 200;
+	y = 200;
+  }	
 	
 	 var TL_tank = TL_Tank (x, y);
 	 

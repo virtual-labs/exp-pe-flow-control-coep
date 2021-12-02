@@ -164,6 +164,8 @@ FC_FaultCheckFun = function(i2pType,lowerSpLevel, higherSpLevel, FColdreadingSor
 						$('#mainDiv').html(FC_faultAdd);
 				
 
+						stop_timer();
+						set_timer();
 						
 						
 						$('#FC_FindFault').on('click', function() {
@@ -173,7 +175,8 @@ FC_FaultCheckFun = function(i2pType,lowerSpLevel, higherSpLevel, FColdreadingSor
 							 
 							 if (selectedFault == -1) {
 
-								 alertify.alert("Please select the fault type");
+								 alertify.alert('Alert',"Please select the fault type");
+								 $(".ajs-header").css("background-color","#ce6058");
 
 							 }else{
 								 
@@ -187,12 +190,27 @@ FC_FaultCheckFun = function(i2pType,lowerSpLevel, higherSpLevel, FColdreadingSor
 									 FC_RightFault.push(FC_fault);
 									 
 									 if(FC_3FaultDetectionCnt == 3){
-										 alertify.alert("All fault detected successfully !!!");
-										 $('#mainDiv').html('');
-											$('#mainDiv').html('<div class="col-md-offset-2 col-md-8 col-md-offset-2"><div class="alert alert-success" style="margin-top:50px; font-size:16px; font-weight:bold; text-align:center;">Congratulations!!!<br/> P/E Converter experiment is completed successfully!!</div></div>');
 										 
+										 
+										 minutes = document.getElementById("minutes").textContent;
+							        	 seconds = document.getElementById("seconds").textContent;        		
+//							        	 console.log(minutes+":"+seconds);
+							        	 
+							        	 ExpTrackData.fcFaultDetectionTimeInMin = minutes;
+							        	 ExpTrackData.fcFaultDetectionTimeInSec = seconds;
+//							        	 console.log(JSON.stringify(ExpTrackData));		
+							        	 
+//							        	 console.log(ExpTrackData);	
+							        	 
+							        	 stop_timer();
+										 alertify.alert("Success","All fault detected successfully !!!");
+										 $(".ajs-header").css("background-color","#4CAF50");
+										 $('#mainDiv').html('');
+											//$('#mainDiv').html('<div class="col-md-offset-2 col-md-8 col-md-offset-2"><div class="alert alert-success" style="margin-top:50px; font-size:16px; font-weight:bold; text-align:center;">Congratulations!!!<br/> P/E Converter experiment is completed successfully!!</div></div>');
+										 FCAnalysis_TransmitterDB();
 									 }else{
-										 alertify.alert("Fault detection successful! Please detect another new fault");
+										 alertify.alert("Success","Fault detection successful! Please detect another new fault");
+										 $(".ajs-header").css("background-color","#4CAF50");
 										 FC_FaultCheckFun(i2pType,lowerSpLevel, higherSpLevel, FColdreadingSorted, FCarr_actualValSorted, FCarr_stdValSorted);
 									 }
 									    
@@ -218,12 +236,14 @@ FC_FaultCheckFun = function(i2pType,lowerSpLevel, higherSpLevel, FColdreadingSor
 									 
 									 if(FC_faultcheckCnt == 2){
 										 
-										 alertify.alert("Wrong Fault..\nThe fault was '"+ FC_faultName +".' \nPlease try again for new fault"); 
+										 alertify.alert('Alert',"Wrong Fault..\nThe fault was '"+ FC_faultName +".' \nPlease try again for new fault"); 
+										 $(".ajs-header").css("background-color","#ce6058");
 										 FC_faultcheckCnt = 0;
 										 FC_FaultCheckFun(i2pType,lowerSpLevel, higherSpLevel, FColdreadingSorted, FCarr_actualValSorted, FCarr_stdValSorted);
 										 
 									 }else{
-										 alertify.alert("Wrong fault...Please try again  !!!");
+										 alertify.alert('Alert',"Wrong fault...Please try again  !!!");
+										 $(".ajs-header").css("background-color","#ce6058");
 									 }
 									
 								 }

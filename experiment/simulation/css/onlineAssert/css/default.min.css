@@ -10,14 +10,14 @@
 	border-radius: 2px
 }
 
-.alertify .ajs-header {
-	color: #000;
-	font-weight: 700;
-	background: #fafafa;
-	border-bottom: #eee 1px solid;
-	border-radius: 2px 2px 0 0;
-	display:none;
-}
+/* .alertify .ajs-header { */
+/* 	color: #000; */
+/* 	font-weight: 700; */
+/* 	background: #fafafa; */
+/* 	border-bottom: #eee 1px solid; */
+/* 	border-radius: 2px 2px 0 0; */
+/* 	display:none; */
+/* } */
 
 .alertify .ajs-body {
 	color: #000

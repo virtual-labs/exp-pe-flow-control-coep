@@ -1061,7 +1061,7 @@ mso-displayed-thousand-separator
 {
 	padding: 10px;
 	color: #fff;
-	font-size: 16px;
+	font-size: 18px;
 	border-radius: 10px;
 	background-color: #666;
 	margin: 20px 10px;;
@@ -1182,6 +1182,12 @@ mso-displayed-thousand-separator
 	header h2 {
 		font-size: 13px;
 	}
+	#canvas {
+	width:100%;
+	height:500px;
+	
+}
+
 }
 
 @media screen and (min-width: 469px) and (max-width: 768px) {
@@ -1201,6 +1207,10 @@ mso-displayed-thousand-separator
 	header h2 {
 		font-size: 13px;
 	}
+	#canvas {
+	width:100%;
+	height:500px;
+}
 
 }
 

@@ -91,6 +91,9 @@ PC_ConfigurePY = function(appId){
 		
 			
 			$("#TestDiv").html(configure);
+			
+			stop_timer();
+			set_timer();
 		
 		//animLT.repeat(0);
 		P2EPYCircle.attr({'fill':'green'});	
@@ -126,20 +129,28 @@ PC_ConfigurePY = function(appId){
 					
 						if(selectedType =="direct" && output == "0"){
 							
-							 alertify.alert("Configuration is successful.<br> Please click next level to make Pneumatic/Electrical Wiring Connections of PY 100");
+							 alertify.alert("Success","Configuration is successful.<br> Please click next level to proceed for wiring of PY 100");
+							 $(".ajs-header").css("background-color","#4CAF50");
 			            	 $("#trsmtrType, #PC_spanLevel, #output").prop("disabled", true);
 			            	 $('#PC_PYwiringDiagram').show();
 							
 						}else if(selectedType =="reverse" && output == "1"){
 							
-							 alertify.alert("Configuration is successful.<br> Please click next level to make Pneumatic/Electrical Wiring Connections of PY 100");
+							 alertify.alert("Success","Configuration is successful.<br> Please click next level to proceed for wiring of PY 100");
+							 $(".ajs-header").css("background-color","#4CAF50");
 			            	 $("#trsmtrType, #PC_spanLevel, #output").prop("disabled", true);
 			            	 $('#PC_PYwiringDiagram').show();
 						}else{
 							
-							alertify.alert("Please select the correct output as per selected P/E converter type");
+							alertify.alert("Alert","Please select the correct output as per selected P/E converter type");
+							 $(".ajs-header").css("background-color","#ce6058");
+							 	PC_ConfigFlagCnt++;
 						}
 	            
+						
+						minutes = document.getElementById("minutes").textContent;
+		        		seconds = document.getElementById("seconds").textContent;        		
+//		        		console.log(minutes+":"+seconds);
 						
 						PC_configData.appId = appId;
 						PC_configData.Type = selectedType;
@@ -147,8 +158,11 @@ PC_ConfigurePY = function(appId){
 						PC_configData.lowerSpanLevel= lowerSpanLevel;
 						PC_configData.higherSpanLevel= higherSpanLevel;
 						PC_configData.output = output;
+						PC_configData.configcnt = PC_ConfigFlagCnt;
 						PC_configData.lowerOutputLevel= lowerOutputLevel;
 						PC_configData.higherOutputLevel= higherOutputLevel;
+						PC_configData.configTimeInMin = minutes;
+						PC_configData.configTimeInSec = seconds;
 						
 						
 //						console.log(PC_configData);
@@ -157,7 +171,7 @@ PC_ConfigurePY = function(appId){
 						ExpTrackData.pcAppData = PC_appData
 //						console.log(ExpTrackData);
 						
-						
+						stop_timer();	
 						
 					
 		
@@ -166,7 +180,8 @@ PC_ConfigurePY = function(appId){
 						
 					}else{
 						
-						alertify.alert("Please select all the fields");
+						alertify.alert("Alert","Please select all the fields");
+						 $(".ajs-header").css("background-color","#ce6058");
 						
 					}
 					

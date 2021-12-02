@@ -91,6 +91,9 @@ $(function () {
 			+'<div >'
 
 	$(mainDiv).html(PC_characterisation);
+	
+	stop_timer();
+	set_timer();
 
 	var slider = document.getElementById("PC_tankLvl");
 	var output = document.getElementById("demo");
@@ -109,7 +112,8 @@ $(function () {
 						
 						
 						if ($.inArray(parseFloat(waterlevel), PColdreading) >= 0) {
-							alertify.alert('This value reading is already present.  Please select another value for reading');
+							alertify.alert('Alert','This value reading is already present.  Please select another value for reading');
+							$(".ajs-header").css("background-color","#ce6058");
 						} else {
 							$("#PC_graph").prop("hidden", false);
 							
@@ -430,8 +434,9 @@ $(function () {
 
 						if (readingcnt < numofReading) {
 
-							alertify.alert("Please take at least " + numofReading
+							alertify.alert('Alert',"Please take at least " + numofReading
 									+ " readings");
+							$(".ajs-header").css("background-color","#ce6058");
 						}
 						
 						
@@ -469,87 +474,89 @@ $(function () {
 								StdValue.push(olValueJson1);
 							}
 							// console.log(OldValue);
-							var chart = new CanvasJS.Chart("PC_chartContainer",
-									{
-										animationEnabled : true,
-										theme : "light2",
-										title : {
-											text : "Pressure Control System (PY 100)",
-											fontSize : 20,
-										},
-
-										axisX : {
-											title : "Input(kg/cm²)",
-											crosshair : {
-												enabled : true,
-												snapToDataPoint : true
-											},
-										// ticks: {suggestedMin: 2, max:6}
-										},
-										axisY : {
-											title : "Output(mA)",
-											minimum : 1,
-											maximum : 21
-										},
-
-										toolTip : {
-											shared : true
-										},
-										legend : {
-											cursor : "pointer",
-											verticalAlign : "bottom",
-											horizontalAlign : "right",
-											dockInsidePlotArea : true,
-											itemclick : toogleDataSeries
-										},
-										data : [ {
-											type : "scatter",
-											showInLegend : true,
-											name : "Observed Output",
-											markerType : "circle",
-											// xValueFormatString: "DD MMM,
-											// YYYY",
-											color : "#F08080",
-
-											dataPoints : OldValue 
-										}, {
-											type : "line",
-											showInLegend : true,
-											name : "Standard Output",
-											// lineDashType: "dash",
-											dataPoints : [ {
-												x : lowerSpLevel,
-												y : lowerOutputLevel 
-											}, {
-												x : higherSpLevel,
-												y : higherOutputLevel
-											} ]
-										}
-										/*, {
-											type : "scatter",
-											showInLegend : true,
-											name : "Standered Output",
-											markerType : "circle",
-											// xValueFormatString: "DD MMM,
-											// YYYY",
-											color : "#000000",
-
-											dataPoints : StdValue
-										},*/ 
-										
-										]
-									});
-							chart.render();
-
-							function toogleDataSeries(e) {
-								if (typeof (e.dataSeries.visible) === "undefined"
-										|| e.dataSeries.visible) {
-									e.dataSeries.visible = false;
-								} else {
-									e.dataSeries.visible = true;
-								}
-								chart.render();
-							}
+//							var chart = new CanvasJS.Chart("PC_chartContainer",
+//									{
+//										animationEnabled : true,
+//										theme : "light2",
+//										title : {
+//											text : "Pressure Control System (PY 100)",
+//											fontSize : 20,
+//										},
+//
+//										axisX : {
+//											title : "Input(kg/cm²)",
+//											crosshair : {
+//												enabled : true,
+//												snapToDataPoint : true
+//											},
+//										// ticks: {suggestedMin: 2, max:6}
+//										},
+//										axisY : {
+//											title : "Output(mA)",
+//											minimum : 1,
+//											maximum : 21
+//										},
+//
+//										toolTip : {
+//											shared : true
+//										},
+//										legend : {
+//											cursor : "pointer",
+//											verticalAlign : "bottom",
+//											horizontalAlign : "right",
+//											dockInsidePlotArea : true,
+//											itemclick : toogleDataSeries
+//										},
+//										data : [ {
+//											type : "scatter",
+//											showInLegend : true,
+//											name : "Observed Output",
+//											markerType : "circle",
+//											// xValueFormatString: "DD MMM,
+//											// YYYY",
+//											color : "#F08080",
+//
+//											dataPoints : OldValue 
+//										}, {
+//											type : "line",
+//											showInLegend : true,
+//											name : "Standard Output",
+//											// lineDashType: "dash",
+//											dataPoints : [ {
+//												x : lowerSpLevel,
+//												y : lowerOutputLevel 
+//											}, {
+//												x : higherSpLevel,
+//												y : higherOutputLevel
+//											} ]
+//										}
+//										/*, {
+//											type : "scatter",
+//											showInLegend : true,
+//											name : "Standered Output",
+//											markerType : "circle",
+//											// xValueFormatString: "DD MMM,
+//											// YYYY",
+//											color : "#000000",
+//
+//											dataPoints : StdValue
+//										},*/ 
+//										
+//										]
+//									});
+//							chart.render();
+//
+//							function toogleDataSeries(e) {
+//								if (typeof (e.dataSeries.visible) === "undefined"
+//										|| e.dataSeries.visible) {
+//									e.dataSeries.visible = false;
+//								} else {
+//									e.dataSeries.visible = true;
+//								}
+//								chart.render();
+//							}
+							PCDrowGraph();
+							 PC_Updategraph(OldValue,lowerSpLevel, higherSpLevel, lowerOutputLevel, higherOutputLevel);
 							 $("#PC_calibration").prop("hidden", false);
 							 						}
 	     
@@ -560,14 +567,16 @@ $(function () {
 
 		if(PColdreadingForGraph.indexOf(lowerSpLevel) == -1){
 			
-			alertify.alert("Please select lower span value and plot the graph again");
+			alertify.alert('Alert',"Please select lower span value and plot the graph again");
+			$(".ajs-header").css("background-color","#ce6058");
 			$("#PC_calibration").prop("hidden", true);
 			$("#PC_graph").prop("hidden", true);			
 			$("#PC_chartContainer").html('');
 			
 		}else if(PColdreadingForGraph.indexOf(higherSpLevel) == -1){
 			
-			alertify.alert("Please select higher span value and plot the graph again");
+			alertify.alert('Alert',"Please select higher span value and plot the graph again");
+			$(".ajs-header").css("background-color","#ce6058");
 			$("#PC_calibration").prop("hidden", true);
 			$("#PC_graph").prop("hidden", true);	
 			$("#PC_chartContainer").html('');
@@ -575,9 +584,16 @@ $(function () {
 			
 		}else{
 			
+			minutes = document.getElementById("minutes").textContent;
+    		seconds = document.getElementById("seconds").textContent;        		
+//    		console.log(minutes+":"+seconds);
+			
 			PC_CharacterisationData.PCreading = PColdreading;
 			PC_CharacterisationData.PCactualVal = PCarr_actualVal;
 			PC_CharacterisationData.PCstdVal = PCarr_stdVal;
+			
+			PC_CharacterisationData.CharacTimeInMin = minutes;
+			PC_CharacterisationData.CharacTimeInSec = seconds;
 			
 //			console.log(PC_CharacterisationData);
 			
@@ -586,6 +602,9 @@ $(function () {
 			ExpTrackData.pcCharactData = PC_CharacterisationData;
 			
 //			console.log(ExpTrackData);
+			
+			stop_timer();
+			
 			if(i2pType == "direct"){
 			PC_calibrationFun_Direct(i2pType, lowerSpLevel, higherSpLevel, PColdreading, PCarr_actualVal, PCarr_stdVal, lowerOutputLevel, higherOutputLevel);
 			}

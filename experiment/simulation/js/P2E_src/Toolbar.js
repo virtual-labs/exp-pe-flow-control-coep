@@ -101,6 +101,8 @@ example.Toolbar = Class.extend({
 //			console.log(jsonarray);
         	if(rightConn != 0 ){
         		
+        		stop_timer();
+        		
         		if(appId == "1"){
     				
         			//	Type = "twowire";

@@ -36,6 +36,10 @@ $(document).ready(function() {
 						LC_appData = {};
 						LevelControl();
 						showDiscription("1");
+						
+						stop_timer();
+						set_timer();
+						
 						$("#next").show();
 //						$("#levels").prop("disabled", true);
 						
@@ -45,6 +49,10 @@ $(document).ready(function() {
 						TC_appData = {};
 						TempControl();
 						showDiscription("2");
+						
+						stop_timer();
+						set_timer();
+						
 						$("#next").show();
 					} else if(this.value == "3"){
 						
@@ -52,6 +60,10 @@ $(document).ready(function() {
 						PC_appData = {};
 						PressureControl();
 						showDiscription("3");
+						
+						stop_timer();
+						set_timer();
+						
 						$("#next").show();
 						
 					} else if(this.value == "4"){
@@ -60,9 +72,16 @@ $(document).ready(function() {
 						FC_appData = {};
 						FlowControl();
 						showDiscription("4");
+						
+						stop_timer();
+						set_timer();
+						
 						$("#next").show();
 					} else{
 						alertify.alert("Please select any application");
+						
+						stop_timer();
+						
 						$("#next").hide();
 						$( "#canvas" ).empty();
 						$("#TestDiv").html('');

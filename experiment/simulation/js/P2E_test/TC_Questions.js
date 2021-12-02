@@ -56,7 +56,8 @@ showTC_Questions = function(appId){
 			
 			$("#TestDiv").html(TC_questions);
 		
-		
+			stop_timer();
+			set_timer();
 	
 	$('#testSubmit').on(
 				'click', function() {
@@ -83,7 +84,8 @@ showTC_Questions = function(appId){
 										
 										if (myRadio == null) {
 											flag = flag && false;
-											alertify.alert('Please attempt all the questions');
+											alertify.alert('Alert','Please attempt all the questions');
+											$(".ajs-header").css("background-color","#ce6058");
 											break;
 										}
 										arr.push({
@@ -106,18 +108,24 @@ showTC_Questions = function(appId){
 							}
 						}
 						
-					
+						minutes = document.getElementById("minutes").textContent;
+		        		seconds = document.getElementById("seconds").textContent;        		
+//		        		console.log(minutes+":"+seconds);
 						
 						TC_testData.appId = appId;
 						TC_testData.rightQuesCnt = ansCount;
+						TC_testData.TesttimeinMin = minutes;
+						TC_testData.TesttimeinSec = seconds;
 					//	console.log(TC_testData);
 						TC_appData.tcTestData = TC_testData
 					//	console.log(TC_appData);
 						ExpTrackData.tcAppData = TC_appData
 //						console.log(ExpTrackData);
 						
+						stop_timer();
 					
-						alertify.alert("Test Submitted Successfully </br>Correct Answers Are  "+ansCount);
+						alertify.alert("Success","Test Submitted Successfully <br/>Correct Answers Are  "+ansCount);
+						 $(".ajs-header").css("background-color","#4CAF50");
 						$("#TCnextLevel").prop("hidden", false);
 						}	
 				});
@@ -156,7 +164,8 @@ showTC_Questions = function(appId){
 						
 					}else{
 						
-						alertify.alert("Please Submit The Test");
+						alertify.alert("Alert","Please Submit The Test");
+						 $(".ajs-header").css("background-color","#ce6058");
 					}
 					
 					

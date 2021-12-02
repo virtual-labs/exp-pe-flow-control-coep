@@ -36,18 +36,27 @@ checkConnectionsForTrans = function(appId, Type,jsonarray){
 				 
 				}
 			 
+			 
+				minutes = document.getElementById("minutes").textContent;
+	    		seconds = document.getElementById("seconds").textContent;        		
+//	    		console.log(minutes+":"+seconds);
+	    		
+			 
 			connData.appId = appId;
 			connData.type = Type;
 			connData.connDiagjson = jsonarray;
 			connData.chkConnCnt = ConnFlagCnt;
 			connData.chkRightConn = rightConn;
+			connData.connTimeInMin = minutes;
+			connData.connTimeInsec  = seconds;
 //		    console.log(connData);
 			ExpTrackData.connData = connData
 //			console.log(ExpTrackData);
 			 
 		 }else{
 			 
-			 alertify.alert("Please select right componants to do the connections");
+			 alertify.alert("Alert","Please select right componants to do the connections");
+			 $(".ajs-header").css("background-color","#ce6058");
 			 
 		 }
 		 

@@ -91,6 +91,9 @@ $(function () {
 			+'<div >'
 
 	$(mainDiv).html(FC_characterisation);
+	
+	stop_timer();
+	set_timer();
 
 	var slider = document.getElementById("FC_tankLvl");
 	var output = document.getElementById("demo");
@@ -109,7 +112,8 @@ $(function () {
 						
 						
 						if ($.inArray(parseFloat(waterlevel), FColdreading) >= 0) {
-							alertify.alert('This value reading is already present.  Please select another value for reading');
+							alertify.alert('Alert','This value reading is already present.  Please select another value for reading');
+							$(".ajs-header").css("background-color","#ce6058");
 						} else {
 							$("#FC_graph").prop("hidden", false);
 							
@@ -430,8 +434,9 @@ $(function () {
 
 						if (readingcnt < numofReading) {
 
-							alertify.alert("Please take at least " + numofReading
+							alertify.alert('Alert',"Please take at least " + numofReading
 									+ " readings");
+							$(".ajs-header").css("background-color","#ce6058");
 						}
 
 						
@@ -470,87 +475,8 @@ $(function () {
 								StdValue.push(olValueJson1);
 							}
 							// console.log(OldValue);
-							var chart = new CanvasJS.Chart("FC_chartContainer",
-									{
-										animationEnabled : true,
-										theme : "light2",
-										title : {
-											text : "Flow Control System (FY 100)",
-											fontSize : 20,
-										},
-
-										axisX : {
-											title : "Input(kg/cm²)",
-											crosshair : {
-												enabled : true,
-												snapToDataPoint : true
-											},
-										// ticks: {suggestedMin: 2, max:6}
-										},
-										axisY : {
-											title : "Output(mA)",
-											minimum : 1,
-											maximum : 21
-										},
-
-										toolTip : {
-											shared : true
-										},
-										legend : {
-											cursor : "pointer",
-											verticalAlign : "bottom",
-											horizontalAlign : "right",
-											dockInsidePlotArea : true,
-											itemclick : toogleDataSeries
-										},
-										data : [ {
-											type : "scatter",
-											showInLegend : true,
-											name : "Observed Output",
-											markerType : "circle",
-											// xValueFormatString: "DD MMM,
-											// YYYY",
-											color : "#F08080",
-
-											dataPoints : OldValue 
-										}, {
-											type : "line",
-											showInLegend : true,
-											name : "Standard Output",
-											// lineDashType: "dash",
-											dataPoints : [ {
-												x : lowerSpLevel,
-												y : lowerOutputLevel 
-											}, {
-												x : higherSpLevel,
-												y : higherOutputLevel
-											} ]
-										}
-										/*, {
-											type : "scatter",
-											showInLegend : true,
-											name : "Standered Output",
-											markerType : "circle",
-											// xValueFormatString: "DD MMM,
-											// YYYY",
-											color : "#000000",
-
-											dataPoints : StdValue
-										},*/ 
-										
-										]
-									});
-							chart.render();
-
-							function toogleDataSeries(e) {
-								if (typeof (e.dataSeries.visible) === "undefined"
-										|| e.dataSeries.visible) {
-									e.dataSeries.visible = false;
-								} else {
-									e.dataSeries.visible = true;
-								}
-								chart.render();
-							}
+							FCDrowGraph();
+							 FC_Updategraph(OldValue,lowerSpLevel, higherSpLevel, lowerOutputLevel, higherOutputLevel);
 							 $("#FC_calibration").prop("hidden", false);
 							 						}
 	     
@@ -561,14 +487,16 @@ $(function () {
 
 		if(FColdreadingForGraph.indexOf(lowerSpLevel) == -1){
 			
-			alertify.alert("Please select lower span value and plot the graph again");
+			alertify.alert('Alert',"Please select lower span value and plot the graph again");
+			$(".ajs-header").css("background-color","#ce6058");
 			$("#FC_calibration").prop("hidden", true);
 			$("#FC_graph").prop("hidden", true);			
 			$("#FC_chartContainer").html('');
 			
 		}else if(FColdreadingForGraph.indexOf(higherSpLevel) == -1){
 			
-			alertify.alert("Please select higher span value and plot the graph again");
+			alertify.alert('Alert',"Please select higher span value and plot the graph again");
+			$(".ajs-header").css("background-color","#ce6058");
 			$("#FC_calibration").prop("hidden", true);
 			$("#FC_graph").prop("hidden", true);	
 			$("#FC_chartContainer").html('');
@@ -576,9 +504,16 @@ $(function () {
 			
 		}else{
 			
+			minutes = document.getElementById("minutes").textContent;
+    		seconds = document.getElementById("seconds").textContent;        		
+//    		console.log(minutes+":"+seconds);
+			
 			FC_CharacterisationData.FCreading = FColdreading;
 			FC_CharacterisationData.FCactualVal = FCarr_actualVal;
 			FC_CharacterisationData.FCstdVal = FCarr_stdVal;
+			
+			FC_CharacterisationData.CharacTimeInMin = minutes;
+			FC_CharacterisationData.CharacTimeInSec = seconds;
 			
 //			console.log(FC_CharacterisationData);
 			
@@ -586,7 +521,12 @@ $(function () {
 			
 			ExpTrackData.fcCharactData = FC_CharacterisationData;
 			
+			
 //			console.log(ExpTrackData);
+			
+			stop_timer();
+			
+			
 			if(i2pType == "direct"){
 			FC_calibrationFun_Direct(i2pType, lowerSpLevel, higherSpLevel, FColdreading, FCarr_actualVal, FCarr_stdVal, lowerOutputLevel, higherOutputLevel);
 			}

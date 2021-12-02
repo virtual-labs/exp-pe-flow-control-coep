@@ -104,6 +104,9 @@ $(function () {
 		$("#mainDiv").html(SymbolLibrary);
 		
 		
+		stop_timer();
+		set_timer();
+		
 		 app  = new example.Application(appId, type);
 		//var canvas = new example.View("draw2Did");
 		app.view.installEditPolicy(  new draw2d.policy.connection.DragConnectionCreatePolicy({

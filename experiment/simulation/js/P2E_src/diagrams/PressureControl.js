@@ -23,9 +23,15 @@ var width = $(window).width();
     //x = 310;
 	//y = 160;
 	
-	x = 390;
-	y = 340;
-
+	
+if ($(window).width() <= 1368) {
+	  x = 390;
+	y = 100;
+  }else
+  {
+  x = 390;
+	y = 200;
+  }	
 	
 	var PL_tank = PL_Tank ((x-80), y);
     var PTCircle = PC_PTCircleWithLabel((x+100),(y-155), 25, "PT 100");	

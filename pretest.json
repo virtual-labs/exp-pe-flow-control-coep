@@ -1,0 +1,46 @@
+[{
+	"question": "What will be the output of any Flapper and Nozzle sensor? ",
+	"answers": {
+		"a": "Change in pressure",
+		"b": "Change in flow of air",
+		"c": "Inductance",
+		"d": "Change in displacement"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Convert a pressure measurement of 15 psi into Kg/cm^2",
+	"answers": {
+		"a": "0.25 Kg/cm^2",
+		"b": "1.0 Kg/cm^2",
+		"c": "0.2 Kg/cm^2",
+		"d": "1.4 Kg/cm^2"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The instruments used for the measurement of pressure is/are",
+	"answers": {
+		"a": "Bellows",
+		"b": "All of these",
+		"c": "Diaphragms",
+		"d": "Fiber optic pressure sensors"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Which of the following is not a type of pressure sensing element?",
+	"answers": {
+		"a": "Bourdon tube",
+		"b": "Bellows",
+		"c": "Orifice plate",
+		"d": "Manometer"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "If we insert the restriction in the pipe line carrying air what effect will be observed on the outlet air parameter",
+	"answers": {
+		"a": "The air pressure will increase",
+		"b": "Flow of outlet air will decrease",
+		"c": "None of these",
+		"d": "The air velocity will increase"
+	},
+	"correctAnswer": "d"
+}]

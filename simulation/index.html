@@ -1,0 +1,486 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<title>Calibration and fault finding of current to pneumatic
+	converter</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/js/jquery.min.js"></script>
+<script src="js/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="css/application.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/Transmitter.css" rel="stylesheet"
+	type="text/css">
+<link href="css/Analysis.css" rel="stylesheet"
+	type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/homePage.css" rel="stylesheet"
+	type="text/css">
+<link href="css/onlineAssert/css/dataTables.bootstrap.min.css"
+	rel="stylesheet">
+<link href="css/onlineAssert/css/buttons.bootstrap.min.css"
+	rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet"
+	href="css/onlineAssert/css/alertify.min.css" />
+<!-- Default theme -->
+<link rel="stylesheet"
+	href="css/onlineAssert/css/default.min.css" />
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery-ui.js"></script>
+<script src="js/lib/jquery.browser.js"></script>
+<script src="js/onlineAssert/js/rangeslider.min.js"></script>
+
+<script type="text/javascript" src="js/lib/raphael.js"></script>
+<script type="text/javascript" src="js/lib/Class.js"></script>
+<script type="text/javascript" src="js/lib/shifty.js"></script>
+<script type="text/javascript" src="js/lib/canvg.js"></script>
+<script type="text/javascript" src="js/lib/jquery.autoresize.js"></script>
+
+<script type="text/javascript"
+	src="js/lib/jquery-touch_punch.js"></script>
+<script type="text/javascript"
+	src="js/lib/pathfinding-browser.min.js"></script>
+<script type="text/javascript" src="js/lib/StackBlur.js"></script>
+
+
+
+<script src="js/dist/draw2d.js"></script>
+
+
+
+<style>
+.fa-plus-square {
+    font-size: 46px;
+    color: green;
+    margin-left: -10px;
+}
+	.fa-minus-square {
+	font-size: 46px;
+	color: red;
+margin-left:-20px
+}
+	#stepsDetails{
+/* overflow-y: scroll; */
+/*     height: 400px; */
+/*     padding-bottom: 150px; */
+    }
+@media screen and (max-width: 1200px) and (min-width: 700px) { 
+    .palette_node_element {
+    float: left;
+    width: 48%;
+    margin: 1px 1%;
+}
+/*    #TestDivTheory{ 
+/*     height:700px; padding-bottom:300px; overflow-y:scroll}  */
+/*   #discriptionDiv p { */
+/* 	font-size: 15px; */
+	
+/* } */
+/* #questionDiv{height:700px;overflow:scroll;padding-bottom:220px;} */
+/* #library { */
+/* 	border: 2px solid #333; */
+/*     /* height: 1074px; */ */
+/*     overflow: scroll; */
+/*     padding-bottom: 221px; */
+/* } */
+
+ #appName{font-size: 15px;}
+#identify, #reset, #next {
+   
+    font-size: 15px;
+    padding:5px;
+}
+#questionDiv .queno {
+    font-size: 18px;
+}
+#questionDiv .queTitle{ font-size: 15px;}
+#terminologiesDiv, #testSubmit, #nextLevel, #LCnextLevel, #TCnextLevel, #PCnextLevel, #FCnextLevel, #LC_LTcheckConfig, #LC_LTwiringDiagram, #PC_PTcheckConfig
+{font-size: 15px; padding:5px;}
+#FC_FYcheckConfig, #LC_LYcheckConfig, #PC_PYcheckConfig, #TC_TYcheckConfig, #FC_FYwiringDiagram, #LC_LYwiringDiagram, #PC_PYwiringDiagram, #TC_TYwiringDiagram
+{font-size: 15px;padding:5px;}
+#LC_characterisationDIv {
+   
+    padding: 10px 10px 20px 10px;
+}
+#FC_characterisationDIv {
+    
+    padding: 10px 10px 20px 10px;
+}
+#PC_characterisationDIv {
+  
+    padding: 10px 10px 20px 10px;
+}
+#TC_characterisationDIv {
+    padding: 10px 10px 20px 10px;
+}
+#TestNextDiv{padding: 10px 10px 20px 10px;}
+}	
+
+</style>
+
+
+
+
+<!-- JavaScript -->
+<script src="js/onlineAssert/js/alertify.min.js"></script>
+
+
+
+
+<script src="js/app/Application.js"></script>
+<script src="js/app/View.js"></script>
+<script src="js/app/Toolbar.js"></script>
+<script src="js/app/TableShape.js"></script>
+
+<script src="js/P2E_src/diagrams/LevelControl.js"></script>
+<script src="js/P2E_src/diagrams/TempControl.js"></script>
+<script src="js/P2E_src/diagrams/PressureControl.js"></script>
+<script src="js/P2E_src/diagrams/FlowControl.js"></script>
+<script src="js/P2E_src/Calculation.js"></script>
+
+
+
+<script src="js/P2E_discription/discription.js"></script>
+
+
+<script src="js/P2E_json/LC_QuestionJson.js"></script>
+<script src="js/P2E_json/TC_QuestionJson.js"></script>
+<script src="js/P2E_json/PC_QuestionJson.js"></script>
+<script src="js/P2E_json/FC_QuestionJson.js"></script>
+
+
+<script src="js/P2E_test/LC_Questions.js"></script>
+<script src="js/P2E_test/TC_Questions.js"></script>
+<script src="js/P2E_test/PC_Questions.js"></script>
+<script src="js/P2E_test/FC_Questions.js"></script>
+
+
+<script src="js/P2E_config/LC_Configuration.js"></script>
+<script src="js/P2E_config/TC_Configuration.js"></script>
+<script src="js/P2E_config/PC_Configuration.js"></script>
+<script src="js/P2E_config/FC_Configuration.js"></script>
+
+<script src="js/P2E_characterisation/LC_Characterisation.js"></script>
+<script src="js/P2E_characterisation/TC_Characterisation.js"></script>
+<script src="js/P2E_characterisation/PC_Characterisation.js"></script>
+<script src="js/P2E_characterisation/FC_Characterisation.js"></script>
+
+<script src="js/P2E_characterisation/formulaJson/LC_characterisationArr.js"></script>
+<script src="js/P2E_characterisation/formulaJson/TC_characterisationArr.js"></script>
+<script src="js/P2E_characterisation/formulaJson/PC_characterisationArr.js"></script>
+<script src="js/P2E_characterisation/formulaJson/FC_characterisationArr.js"></script>
+
+
+<script src="js/P2E_characterisation/animationDiagrams/P2EConveter_direct.js"></script>
+
+
+<script src="js/P2E_calibration/LC_CalibrationDirect.js"></script>
+<script src="js/P2E_calibration/LC_CalibrationReverse.js"></script>
+<script src="js/P2E_calibration/TC_CalibrationDirect.js"></script>
+<script src="js/P2E_calibration/TC_CalibrationReverse.js"></script>
+<script src="js/P2E_calibration/PC_CalibrationDirect.js"></script>
+<script src="js/P2E_calibration/PC_CalibrationReverse.js"></script>
+<script src="js/P2E_calibration/FC_CalibrationDirect.js"></script>
+<script src="js/P2E_calibration/FC_CalibrationReverse.js"></script>
+
+<script src="js/P2E_FaultCreation/LC_FaultCreation.js"></script>
+<script src="js/P2E_FaultCreation/TC_FaultCreation.js"></script>
+<script src="js/P2E_FaultCreation/PC_FaultCreation.js"></script>
+<script src="js/P2E_FaultCreation/FC_FaultCreation.js"></script>
+
+<script src="js/P2E_FaultCreation/LC_Analysis.js"></script>
+<script src="js/P2E_FaultCreation/TC_Analysis.js"></script>
+<script src="js/P2E_FaultCreation/PC_Analysis.js"></script>
+<script src="js/P2E_FaultCreation/FC_Analysis.js"></script>
+
+<script src="js/P2E_src/Application.js"></script>
+<script src="js/P2E_src/View.js"></script>
+<script src="js/P2E_src/Toolbar.js"></script>
+<script src="js/P2E_src/HoverConnection.js"></script>
+<script src="js/P2E_src/SymbolLiabrary.js"></script>
+<script src="js/P2E_src/symbols/LTSymbols.js"></script>
+<script src="js/P2E_src/symbols/TTSymbols.js"></script>
+<script src="js/P2E_src/symbols/PTSymbols.js"></script>
+<script src="js/P2E_src/symbols/FTSymbols.js"></script>
+<script src="js/P2E_src/symbols/commonSymbols.js"></script>
+<script src="js/P2E_src/symbols/I2PSymbols.js"></script>
+<script src="js/P2E_src/symbols/PneumaticTransSymbols.js"></script>
+<script src="js/P2E_src/symbols/P2ESymbols.js"></script>
+
+
+
+<script src="js/P2E_connections/CheckConnectionForTrans.js"></script>
+
+<script src="js/P2E_connections/P2E Converter/p2eLY100.js"></script>
+<script src="js/P2E_connections/P2E Converter/p2eTY100.js"></script>
+<script src="js/P2E_connections/P2E Converter/p2ePY100.js"></script>
+<script src="js/P2E_connections/P2E Converter/p2eFY100.js"></script>
+
+<script src="js/P2E_connections/Connhint.js"></script>
+
+<script type="text/javascript" src="js/lib/canvasjs.min.js"></script>
+
+
+<script src="js/onlineAssert/js/jquery.dataTables.min.js"></script>
+<script src="js/onlineAssert/js/dataTables.bootstrap.min.js"></script>
+<script src="js/onlineAssert/js/dataTables.buttons.min.js"></script>
+<script src="js/onlineAssert/js/buttons.bootstrap.min.js"></script>
+<script src="js/onlineAssert/js/jszip.min.js"></script>
+<script src="js/onlineAssert/js/pdfmake.min.js"></script>
+<script src="js/onlineAssert/js/vfs_fonts.js"></script>
+<script src="js/onlineAssert/js/buttons.html5.min.js"></script>
+<script src="js/onlineAssert/js/buttons.print.min.js"></script>
+
+
+
+
+<script>
+	var type = "direct";
+	var type1 = "reverse";
+</script>
+
+
+
+
+</head>
+
+
+
+<body >
+	<header>
+		<img src='images/COEPlogo.png' />
+		<h1>COLLEGE OF ENGINEERING, PUNE</h1>
+		<h2 id="appName">
+			<i>Calibration and fault finding of pneumatic to current
+				converter</i>
+		</h2>
+	</header>
+	  
+	
+	<div id="Reqtimer" class="col-md-12 col-sm-12"><i><label id="minutes">00</label><span>:</span><label id="seconds">00</label></i></div>
+	  
+	 <!-- <a href="javascript:SINGLEACTINGCYLINDER.connectionLevel(1, type)">check connections 1</a><br/>
+	  <a href="javascript:SINGLEACTINGCYLINDER.connectionLevel(2, type)">check connections 2</a><br/>
+	  <a href="javascript:SINGLEACTINGCYLINDER.connectionLevel(3, type)">check connections 3</a><br/>
+	  <a href="javascript:SINGLEACTINGCYLINDER.connectionLevel(4, type)">check connections 4</a><br/>-->
+	
+
+<!-- 	<a -->
+<!-- 		href="javascript:SINGLEACTINGCYLINDER.LC_Characterisation(1, type, null)">LC -->
+<!-- 		Characterisation Direct</a> -->
+<!-- 	<br /> -->
+<!-- 	<a -->
+<!-- 		href="javascript:SINGLEACTINGCYLINDER.LC_Characterisation(1, type1, null)">LC -->
+<!-- 		Characterisation Reverse</a> -->
+<!-- 	<br /> -->
+
+
+<!-- 	<a href="javascript:SINGLEACTINGCYLINDER.TC_Characterisation(2, type, null)">TC Characterisation Direct</a><br/> -->
+<!-- 	 <a href="javascript:SINGLEACTINGCYLINDER.TC_Characterisation(2, type1, null)">TC Characterisation Reverse</a><br/> -->
+	 
+<!-- 	 <a href="javascript:SINGLEACTINGCYLINDER.PC_Characterisation(3, type, null)">PC Characterisation Direct</a><br/> -->
+<!-- 	 <a href="javascript:SINGLEACTINGCYLINDER.PC_Characterisation(3, type1, null)">PC Characterisation Reverse</a><br/> -->
+	 
+<!-- 	 <a href="javascript:SINGLEACTINGCYLINDER.FC_Characterisation(4, type, null)">FC Characterisation Direct</a><br/> -->
+<!-- 	 <a href="javascript:SINGLEACTINGCYLINDER.FC_Characterisation(4, type1, null)">FC Characterisation Reverse</a><br/> -->
+
+
+	<div id="mainDiv" class="container-fluid">
+		<div class="row">
+			<div
+				class="col-md-8 col-md-offset-2 col-xl-6 col-xl-offset-3 levelsApp">
+				<label class="control-label col-sm-2" for="levels">Select
+					Application</label>
+				<div class="col-sm-10">
+					<select class="form-control" name="App" id="levels">
+						<!-- 	<option value="-1">Select</option>
+										<option value="0">Level Control</option>
+										<option value="1">Temperature Control</option>
+										<option value="2">Pressure Control</option>
+										<option value="3">Flow Control</option>-->
+					</select>
+				</div>
+				<div id="tramsTInst">
+					<i>
+						<p>In any process industry transmitters, P/E converters,
+							Controllers, and Control valves are termed as "Process Loop
+							Components. While using these components certain steps are
+							required to be carried out. These steps are termed as
+							"Connection/Configuration", "Characterisation", "Calibration",
+							and "fault finding". In each phase the user is supposed to carry
+							out certain tasks as per industry standard. The main unit
+							processes which are predominantly used in industries are
+							Temperature, Level, Pressure, and Flow control System. As per the
+							requirement the you can select the process and follow the steps
+							as described in the "Procedure" section. The details of each step
+							are as follows:</p>
+						<ol id="stepsDetails">
+							
+
+							<li><span>Configure a P/E converters:</span> To configure a P/E converter you need to select type of P/E converter</li>
+							<li><span>Connection/wiring diagram:</span> From the
+								standard library select the components required for the
+								connection like a power supply, P/E converters module, and an
+								analog input card. Connect them as per standard connection
+								diagram mentioned in theory.</li>
+							<li><span>Characterisation:</span> Once the configuration
+								and wiring diagram is complete change the process variable and
+								observe the output of the P/E converters. Ensure that you have
+								exposed P/E converters to full span as far as possible take
+								maximum readings.</li>
+							<li><span>Calibration:</span> After scrutinising the
+								readings calculate various parameters and calibrate the P/E
+								converters by adjusting "Zero, Span, and Linearity"</li>
+							<li><span>Fault finding:</span> In this phase a fault is
+								introduced and the user needs to identify the fault based on the
+								readings of the P/E converters.</li>
+						</ol>
+					</i>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12" id="canvasMainDiv">
+				
+				<div class="col-md-12 col-sm-12" style="">
+					<div id="canvas"></div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div id="TestDiv"></div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	</div>
+	</div>
+
+
+
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Diagram</h4>
+				</div>
+				<div class="modal-body">
+					<!-- LT Connection Hint Images-->
+					<img id="p2eLY100Conn" src="images/ConnImg/p2eLY100Conn.png"
+						style="width: 100%; height: 300px; display: none"> <img
+						id="p2eTY100Conn" src="images/ConnImg/p2eTY100Conn.png"
+						style="width: 100%; height: 300px; display: none"> <img
+						id="p2ePY100Conn" src="images/ConnImg/p2ePY100Conn.png"
+						style="width: 100%; height: 300px; display: none"> <img
+						id="p2eFY100Conn" src="images/ConnImg/p2eFY100Conn.png"
+						style="width: 100%; height: 300px; display: none">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="calibrationmyModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Formulas for calibration</h4>
+				</div>
+				<div class="modal-body">
+					<div id="zero4direct" style="display: none">
+						<p>Zero Error Formula</p>
+						<div class="formu">ZERO ERROR = output for lower span value
+							- 4 </div>
+					</div>
+					<div id="span4direct" style="display: none">
+						<p>Span error Formula</p>
+						<div class="formu">SPAN ERROR = output for higher span
+							value - 20</div>
+					</div>
+					<div id="Accuracy4direct" style="display: none">
+						<p>Accuracy formula</p>
+						<div class="formu">PERCENTAGE ACCURACY = <div> (&nbsp;&nbsp;(&nbsp;standard output
+							- observed output&nbsp;) / total number of readings &nbsp;&nbsp;) * 100</div></div>
+						<p>Average Accuracy Formula</p>
+						<div class="formu">AVERAGE ACCURACY = <div>Sum of ( Percentage
+							Accuracy ) / total number of readings</div></div>
+					</div>
+					<div id="Linearity4direct" style="display: none">
+						<p>Linearity formula</p>
+						<div>x : List of expected reading <br> y : List of reading obtained <br> N : No. of readings</div>
+						     <div class="formu">A = Sqrt((sum(x))<sup>2</sup>/N - sum(x<sup>2</sup>))</div>
+						     <div class="formu">B = Sqrt((sum(y))<sup>2</sup>/N - sum(y<sup>2</sup>))</div> 
+						     <div class="formu">C = (sum(x).sum(y))/N - sum(xy)</div>
+						     <div class="formu">Linearity = AB/C</div>
+						
+					</div>
+
+					<!-- 		           for reverse -->
+					<div id="zero4reverse" style="display: none">
+						<p>Zero Error Formula</p>
+						<div class="formu">ZERO ERROR = output for lower span
+							value - 20</div>
+					</div>
+					<div id="span4reverse" style="display: none">
+						<p>Span error Formula</p>
+						<div class="formu">SPAN ERROR = output for higher span value
+							- 4</div>
+					</div>
+					<div id="Accuracy4reverse" style="display: none">
+						<p>Accuracy formula</p>
+						<div class="formu">PERCENTAGE ACCURACY = <div> (&nbsp;&nbsp;(&nbsp;standard output
+							- observed output&nbsp;&nbsp;) / total number of readings &nbsp;&nbsp;) * 100</div></div>
+						<p>Average Accuracy Formula</p>
+						<div class="formu">AVERAGE ACCURACY = <div>Sum of ( Percentage
+							Accuracy ) / total number of readings</div></div>
+					</div>
+					<div id="Linearity4reverse" style="display: none">
+						<p>Linearity formula</p>
+					
+						<div>x : List of expected reading <br> y : List of reading obtained <br> N : No. of readings</div>
+						     <div class="formu">A = Sqrt((sum(x))<sup>2</sup>/N - sum(x<sup>2</sup>))</div>
+						     <div class="formu">B = Sqrt((sum(y))<sup>2</sup>/N - sum(y<sup>2</sup>))</div> 
+						     <div class="formu">C = (sum(x).sum(y))/N - sum(xy)</div>
+						     <div class="formu">Linearity = AB/C</div>
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+<script src="../assets/js/iframeResize.js"></script></body>
+
+
+<script>
+window.scrollTo(0,0);
+</script>
+
+
+
+</html>
